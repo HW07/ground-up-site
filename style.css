@@ -1,0 +1,357 @@
+:root {
+  --bg_h: #1d2021;
+  --bg:   #282828;
+  --bg_s: #32302f;
+  --bg1:  #3c3836;
+  --bg2:  #504945;
+  --bg3:  #665c54;
+  --bg4:  #7c6f64;
+
+  --fg:  #fbf1c7;
+  --fg1: #ebdbb2;
+  --fg2: #d5c4a1;
+  --fg3: #bdae93;
+  --fg4: #a89984;
+
+  --red:    #fb4934;
+  --green:  #b8bb26;
+  --yellow: #fabd2f;
+  --blue:   #83a598;
+  --purple: #d3869b;
+  --aqua:   #8ec07c;
+  --gray:   #928374;
+  --orange: #fe8019;
+
+  --red-dim:    #cc2412;
+  --green-dim:  #98971a;
+  --yellow-dim: #d79921;
+  --blue-dim:   #458588;
+  --purple-dim: #b16286;
+  --aqua-dim:   #689d6a;
+  --gray-dim:   #a89984;
+  --orange-dim: #d65d0e;
+}
+
+/* Normal Colors */
+
+.red {
+  color: var(--red);
+}
+
+.green {
+  color: var(--green);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+.purple {
+  color: var(--purple);
+}
+
+.aqua {
+  color: var(--aqua);
+}
+
+.gray {
+  color: var(--gray);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+/* Dim Colors */
+
+.red-dim {
+  color: var(--red-dim);
+}
+
+.green-dim {
+  color: var(--green-dim);
+}
+
+.yellow-dim {
+  color: var(--yellow-dim);
+}
+
+.blue-dim {
+  color: var(--blue-dim);
+}
+
+.purple-dim {
+  color: var(--purple-dim);
+}
+
+.aqua-dim {
+  color: var(--aqua-dim);
+}
+
+.gray-dim {
+  color: var(--gray-dim);
+}
+
+.orange-dim {
+  color: var(--orange-dim);
+}
+
+/* Foreground Colors */
+
+.fg {
+  color: var(--fg);
+}
+
+.fg1 {
+  color: var(--fg1);
+}
+
+.fg2 {
+  color: var(--fg2);
+}
+
+.fg3 {
+  color: var(--fg3);
+}
+
+.fg4 {
+  color: var(--fg4);
+}
+
+/* Background Colors */
+
+.bg-hard {
+  color: var(--bg_h);
+}
+
+.bg {
+  color: var(--bg);
+}
+
+.bg-soft {
+  color: var(--bg_s);
+}
+
+.bg1 {
+  color: var(--bg1);
+}
+
+.bg2 {
+  color: var(--bg2);
+}
+
+.bg3 {
+  color: var(--bg3);
+}
+
+.bg4 {
+  color: var(--bg4);
+}
+/* Fonts */
+
+@font-face {
+  font-family: "Geist_Bold";
+  src: url("./fonts/Geist-Bold.otf");
+}
+
+@font-face {
+  font-family: "Geist_Medium";
+  src: url("./fonts/Geist-Medium.otf");
+}
+
+@font-face {
+  font-family: "Geist_Regular";
+  src: url("./fonts/Geist-Regular.otf");
+}
+
+/* Styling Rules */
+.panel{
+  max-width: 64rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 1rem;
+
+  background-color: var(--bg1);
+
+  padding-bottom: 2rem;
+
+  box-shadow: 0px 0px 2rem 0px black;
+
+  padding-top: 2rem;
+}
+
+.gap{
+  padding: 2rem;
+}
+
+.alt_text{
+  text-align: center;
+  flex-grow: 2;
+
+  background-color: var(--bg_h);
+  margin-left: 16rem;
+  margin-right: 16rem;
+
+  max-width: 32rem;
+  min-width: 4rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 1rem;
+
+  box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+.alt_text_container{
+  display: flex;
+  justify-content: center;
+}
+
+.image_container{
+  display: flex;
+
+  justify-content: center;
+}
+
+.icon_list_container{
+  display: flex;
+  justify-content: center;
+}
+
+html{
+  background-color: var(--bg_h);
+  color: var(--fg);
+
+  font-family: "Geist_Regular";
+  font-size: 1rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-family: "Geist_Bold";
+  text-align: center;
+
+  font-size: 3rem;
+}
+
+h2{
+  margin: 0;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+
+  font-family: "Geist_Bold";
+  font-size: 2rem;
+}
+
+h3{
+  margin: 0;
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+
+  font-family: "Geist_Bold";
+  font-size: 1.5rem;
+}
+
+p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: justify;
+}
+
+p#center{
+  font-size: 2rem;
+  color: var(--fg3);
+
+  text-align: center;
+}
+
+b{
+  font-family: "Geist_Bold";
+}
+
+a{
+  color: var(--fg2);
+}
+
+ul{
+  margin: 0;
+  margin-left: 2rem;
+}
+
+img{
+  transition: all 150ms ease-in-out;
+
+  flex-grow: 2;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  max-width: 48rem;
+  min-width: 8rem;
+  height: auto;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 1rem;
+
+  box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+img#circular{
+  flex-grow: 2;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  max-width: 16rem;
+  min-width: 8rem;
+  height: auto;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 128rem;
+
+  box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+img#icon_list{
+  flex-grow: 2;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  max-width: 4rem;
+  min-width: 4rem;
+  height: auto;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 128rem;
+
+  box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.2);
+}
+
+img#icon_list:hover{
+  flex-grow: 2;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  scale: 150%;
+  height: auto;
+
+  opacity: 60%;
+
+  border: 0.3rem solid var(--bg4);
+  border-radius: 128rem;
+
+  box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.2);
+}
